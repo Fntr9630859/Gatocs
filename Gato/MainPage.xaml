@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gato.MainPage">
+
+    <ScrollView>
+        <Grid Padding="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal" Spacing="30" Margin="0,0,0,20">
+                <Label x:Name="scorep1" Text="PuntajeP1 = 0" FontSize="Subtitle"/>
+                <Image x:Name="jugadorenjuego" Source="fonn.png"/>
+                <Label x:Name="scorep2" Text="PuntajeP2 = 0" FontSize="Subtitle"/>
+            </StackLayout>
+
+            <!-- Primera fila -->
+            <StackLayout Grid.Row="1" Margin="0,20,0,0" Orientation="Horizontal" Spacing="6">
+                <Button x:Name="x1y1" Clicked="x1y1_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+                <Button x:Name="x1y2" Clicked="x1y2_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+                <Button x:Name="x1y3" Clicked="x1y3_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+            </StackLayout>
+
+            <!-- Segunda fila -->
+            <StackLayout Grid.Row="2" Margin="0,20,0,0" Orientation="Horizontal" Spacing="6">
+                <Button x:Name="x2y1" Clicked="x2y1_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+                <Button x:Name="x2y2" Clicked="x2y2_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+                <Button x:Name="x2y3" Clicked="x2y3_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+            </StackLayout>
+
+            <!-- Tercera fila -->
+            <StackLayout Grid.Row="3" Margin="0,20,0,0" Orientation="Horizontal" Spacing="6">
+                <Button x:Name="x3y1" Clicked="x3y1_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+                <Button x:Name="x3y2" Clicked="x3y2_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+                <Button x:Name="x3y3" Clicked="x3y3_Click" BackgroundColor="#000000" ImageSource="fonn.png"/>
+            </StackLayout>
+
+            <!-- Botón de revancha -->
+            <Button Grid.Row="4" x:Name="gato" Margin="0,40,0,0" WidthRequest="300" HeightRequest="100" Clicked="Reset_Click" BackgroundColor="#3D85F5" Text=" reiniciar" CornerRadius="50" IsEnabled="False" FontSize="Medium"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
